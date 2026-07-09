@@ -1,0 +1,135 @@
+@import 'tailwindcss';
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background: #0a0a0a;
+    color: #fafafa;
+  }
+
+  :focus-visible {
+    outline: 2px solid #ef4444;
+    outline-offset: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer components {
+  /* Console scene */
+  .console-scene {
+    background: radial-gradient(
+      ellipse at center,
+      #1a0a0a 0%,
+      #0a0505 50%,
+      #050202 100%
+    );
+  }
+
+  .console-title {
+    text-shadow:
+      0 0 10px rgba(239, 68, 68, 0.5),
+      0 0 20px rgba(239, 68, 68, 0.3),
+      0 0 40px rgba(239, 68, 68, 0.1);
+  }
+
+  .console-body {
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.05),
+      0 0 40px rgba(239, 68, 68, 0.1),
+      0 20px 60px rgba(0, 0, 0, 0.5);
+  }
+
+  .console-panel {
+    background: linear-gradient(
+      180deg,
+      rgba(20, 5, 5, 0.8) 0%,
+      rgba(10, 2, 2, 0.9) 100%
+    );
+    border: 1px solid rgba(127, 29, 29, 0.3);
+    border-radius: 4px;
+  }
+
+  /* LED display */
+  .led-text {
+    font-family: 'Share Tech Mono', 'Orbitron', monospace;
+    text-shadow:
+      0 0 5px rgba(239, 68, 68, 0.8),
+      0 0 10px rgba(239, 68, 68, 0.5),
+      0 0 20px rgba(239, 68, 68, 0.3);
+  }
+
+  .crt-scanlines {
+    background: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(0, 0, 0, 0.15) 2px,
+      rgba(0, 0, 0, 0.15) 4px
+    );
+  }
+
+  /* CRT effects */
+  .crt-overlay {
+    background: repeating-linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.03) 0px,
+      rgba(0, 0, 0, 0.03) 1px,
+      transparent 1px,
+      transparent 3px
+    );
+    animation: crt-flicker 0.1s infinite;
+  }
+
+  .crt-vignette {
+    background: radial-gradient(
+      ellipse at center,
+      transparent 60%,
+      rgba(0, 0, 0, 0.4) 100%
+    );
+  }
+
+  /* Travel button */
+  .travel-button {
+    box-shadow:
+      0 4px 20px rgba(239, 68, 68, 0.3),
+      inset 0 1px 0 rgba(255, 255, 255, 0.2),
+      inset 0 -2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Timeline */
+  .timeline-track {
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+  }
+}
+
+@keyframes crt-flicker {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.98;
+  }
+}
