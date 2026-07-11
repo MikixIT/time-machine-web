@@ -1,13 +1,11 @@
 import type { EraYear, EraModule, EraTheme } from '@/types';
 import { era1995 } from '@/eras/1995';
+import { era2000 } from '@/eras/2000';
+import { era2005 } from '@/eras/2005';
+import { era2010 } from '@/eras/2010';
+import { era2015 } from '@/eras/2015';
+import { era2020 } from '@/eras/2020';
 import { era2026 } from '@/eras/2026';
-import {
-  era2000,
-  era2005,
-  era2010,
-  era2015,
-  era2020,
-} from '@/eras/placeholders';
 
 const eraRegistry: Record<EraYear, EraModule> = {
   1995: era1995,
