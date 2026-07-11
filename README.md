@@ -99,11 +99,11 @@ src/
 ├── animations/       # Motion variants & travel config
 ├── eras/             # Isolated era modules
 │   ├── 1995/         # ✅ Complete
-│   ├── 2000/         # Placeholder
-│   ├── 2005/         # Placeholder
-│   ├── 2010/         # Placeholder
-│   ├── 2015/         # Placeholder
-│   ├── 2020/         # Placeholder
+│   ├── 2000/         # ✅ Complete
+│   ├── 2005/         # ✅ Complete
+│   ├── 2010/         # ✅ Complete
+│   ├── 2015/         # ✅ Complete
+│   ├── 2020/         # ✅ Complete
 │   └── 2026/         # ✅ Complete
 ├── styles/           # Global CSS
 ├── types/            # TypeScript types
@@ -134,15 +134,15 @@ No changes to core application code required.
 
 ## Implemented Eras
 
-| Year | Status         | Style                                           |
-| ---- | -------------- | ----------------------------------------------- |
-| 1995 | ✅ Complete    | Gray bg, blue links, tables, marquee, guestbook |
-| 2000 | 🔲 Placeholder | Dot-com / Flash era                             |
-| 2005 | 🔲 Placeholder | Web 2.0 glossy UI                               |
-| 2010 | 🔲 Placeholder | Responsive / flat design                        |
-| 2015 | 🔲 Placeholder | Material Design                                 |
-| 2020 | 🔲 Placeholder | Dark mode / neumorphism                         |
-| 2026 | ✅ Complete    | Glassmorphism, bento grid, dark SaaS            |
+| Year | Status      | Style                                              |
+| ---- | ----------- | -------------------------------------------------- |
+| 1995 | ✅ Complete | Gray bg, blue links, tables, marquee, guestbook    |
+| 2000 | ✅ Complete | Dot-com / Flash era with splash-page energy        |
+| 2005 | ✅ Complete | Web 2.0 glossy UI with AJAX-era personality        |
+| 2010 | ✅ Complete | Responsive / flat design for mobile-first browsing |
+| 2015 | ✅ Complete | Material Design and component-driven systems       |
+| 2020 | ✅ Complete | Dark mode, accessibility, and softer motion        |
+| 2026 | ✅ Complete | Glassmorphism, bento grid, dark SaaS               |
 
 ## Future Roadmap
 
@@ -159,7 +159,7 @@ No changes to core application code required.
 
 Contributions are welcome! Priority areas:
 
-1. **Complete placeholder eras** (2000, 2005, 2010, 2015, 2020)
+1. **Expand era storytelling** with richer historical details and media references
 2. **Sound effects** — Wire up the travel sound hook
 3. **Accessibility improvements**
 4. **Performance optimizations**
