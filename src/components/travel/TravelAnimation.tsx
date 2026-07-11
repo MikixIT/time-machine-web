@@ -119,7 +119,7 @@ export function TravelAnimation() {
           <div className="w-64">
             <div className="h-1 overflow-hidden rounded-full bg-red-900/30">
               <motion.div
-                className="h-full bg-gradient-to-r from-red-600 to-red-400"
+                className="h-full bg-linear-to-r from-red-600 to-red-400"
                 initial={{ width: '0%' }}
                 animate={{
                   width: travelPhase === 'arrival' ? '100%' : '70%',

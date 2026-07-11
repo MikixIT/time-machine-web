@@ -20,8 +20,8 @@ export function TravelButton({ onClick, disabled }: TravelButtonProps) {
       whileTap={reducedMotion || disabled ? undefined : { scale: 0.97 }}
     >
       {/* Button glow layers */}
-      <div className="absolute inset-0 rounded-lg bg-gradient-to-b from-red-600 to-red-900" />
-      <div className="absolute inset-[2px] rounded-md bg-gradient-to-b from-red-500/80 to-red-800/90" />
+      <div className="absolute inset-0 rounded-lg bg-linear-to-b from-red-600 to-red-900" />
+      <div className="absolute inset-0.5 rounded-md bg-linear-to-b from-red-500/80 to-red-800/90" />
 
       {!reducedMotion && (
         <motion.div
@@ -43,7 +43,7 @@ export function TravelButton({ onClick, disabled }: TravelButtonProps) {
       </span>
 
       {/* Metallic edge highlight */}
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/30 to-transparent" />
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-white/30 to-transparent" />
     </motion.button>
   );
 }

@@ -35,7 +35,7 @@ export function LedDisplay({ label, value, id }: LedDisplayProps) {
         >
           {value}
         </motion.span>
-        <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-white/5 to-transparent" />
+        <div className="pointer-events-none absolute inset-0 bg-linear-to-b from-white/5 to-transparent" />
       </div>
     </div>
   );

@@ -112,7 +112,7 @@ export function Timeline({ onYearSelect }: TimelineProps = {}) {
       >
         {/* Progress fill */}
         <motion.div
-          className="absolute inset-y-0 left-0 rounded-full bg-gradient-to-r from-red-800 to-red-500"
+          className="absolute inset-y-0 left-0 rounded-full bg-linear-to-r from-red-800 to-red-500"
           style={{ width: `${progress * 100}%` }}
           layout={!reducedMotion}
           transition={{ type: 'spring', stiffness: 300, damping: 30 }}

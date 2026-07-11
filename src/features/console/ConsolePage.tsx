@@ -62,7 +62,7 @@ export function ConsolePage() {
           {/* Console body */}
           <motion.div
             variants={slideUp}
-            className="console-body rounded-xl border-2 border-red-900/40 bg-gradient-to-b from-zinc-900 to-zinc-950 p-6 shadow-2xl sm:p-8"
+            className="console-body rounded-xl border-2 border-red-900/40 bg-linear-to-b from-zinc-900 to-zinc-950 p-6 shadow-2xl sm:p-8"
           >
             {/* Metal rivets decoration */}
             <div className="pointer-events-none absolute inset-2 rounded-lg border border-red-900/20" />

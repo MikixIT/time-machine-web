@@ -41,7 +41,7 @@ function BentoCard({
           : { scale: 1.02, transition: { duration: 0.2 } }
       }
     >
-      <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/10 via-transparent to-cyan-500/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+      <div className="absolute inset-0 bg-linear-to-br from-indigo-500/10 via-transparent to-cyan-500/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
       <div className="relative">
         <div className="mb-4 inline-flex rounded-xl bg-white/10 p-3 text-indigo-400">
           {icon}
@@ -73,8 +73,8 @@ export default function Era2026Page() {
       {/* Ambient gradient orbs */}
       {!reducedMotion && (
         <>
-          <div className="pointer-events-none fixed left-1/4 top-0 h-[500px] w-[500px] rounded-full bg-indigo-600/20 blur-[120px]" />
-          <div className="pointer-events-none fixed bottom-0 right-1/4 h-[400px] w-[400px] rounded-full bg-cyan-500/15 blur-[100px]" />
+          <div className="pointer-events-none fixed left-1/4 top-0 h-125 w-125 rounded-full bg-indigo-600/20 blur-[120px]" />
+          <div className="pointer-events-none fixed bottom-0 right-1/4 h-100 w-100 rounded-full bg-cyan-500/15 blur-[100px]" />
         </>
       )}
 
@@ -82,7 +82,7 @@ export default function Era2026Page() {
       <nav className="relative z-10 border-b border-white/10 bg-white/5 backdrop-blur-xl">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
           <div className="flex items-center gap-2">
-            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-indigo-500 to-cyan-400">
+            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-linear-to-br from-indigo-500 to-cyan-400">
               <Globe className="h-4 w-4 text-white" />
             </div>
             <span className="text-sm font-semibold tracking-tight">
@@ -117,11 +117,11 @@ export default function Era2026Page() {
           </div>
 
           <h1 className="mb-6 max-w-3xl text-5xl font-bold tracking-tight sm:text-6xl lg:text-7xl">
-            <span className="bg-gradient-to-r from-white via-white to-zinc-500 bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-white via-white to-zinc-500 bg-clip-text text-transparent">
               Web design,
             </span>
             <br />
-            <span className="bg-gradient-to-r from-indigo-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-indigo-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">
               reimagined.
             </span>
           </h1>
@@ -173,7 +173,7 @@ export default function Era2026Page() {
 
         {/* Feature highlight */}
         <motion.div
-          className="mt-4 overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-r from-indigo-500/10 via-purple-500/10 to-cyan-500/10 p-8 backdrop-blur-xl"
+          className="mt-4 overflow-hidden rounded-2xl border border-white/10 bg-linear-to-r from-indigo-500/10 via-purple-500/10 to-cyan-500/10 p-8 backdrop-blur-xl"
           initial={reducedMotion ? false : { opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 0.5 }}
