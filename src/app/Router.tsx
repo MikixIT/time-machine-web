@@ -4,7 +4,7 @@ import { EraPage } from '@/features/era/EraPage';
 
 export function AppRouter() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/time-machine-web/">
       <Routes>
         <Route path="/" element={<ConsolePage />} />
         <Route path="/era/:year" element={<EraPage />} />
