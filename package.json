@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "description": "Time Machine Web — travel through the history of web design",
   "author": "Michael Torres",
+  "homepage": "https://mikixit.github.io/time-machine-web",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -16,6 +17,8 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "typecheck": "tsc -b --noEmit",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "prepare": "husky"
   },
   "dependencies": {
