@@ -144,16 +144,6 @@ No changes to core application code required.
 | 2020 | ✅ Complete | Dark mode, accessibility, and softer motion        |
 | 2026 | ✅ Complete | Glassmorphism, bento grid, dark SaaS               |
 
-## Future Roadmap
-
-- [ ] Wayback Machine API integration
-- [ ] AI-generated era summaries
-- [ ] Side-by-side website comparison
-- [ ] Historical events timeline
-- [ ] Sound effects (Web Audio API)
-- [ ] CRT fullscreen mode
-- [ ] Custom theme editor
-- [ ] Community plugin system
 
 ## Contributing
 
